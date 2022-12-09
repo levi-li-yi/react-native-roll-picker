@@ -1,0 +1,104 @@
+
+// buildscript {
+//     repositories {
+//         jcenter()
+//     }
+
+//     dependencies {
+//         classpath 'com.android.tools.build:gradle:1.3.1'
+//     }
+// }
+
+// apply plugin: 'com.android.library'
+
+// android {
+//     compileSdkVersion 23
+//     buildToolsVersion "23.0.1"
+
+//     defaultConfig {
+//         minSdkVersion 16
+//         targetSdkVersion 22
+//         versionCode 1
+//         versionName "1.0"
+//     }
+//     lintOptions {
+//         abortOnError false
+//     }
+// }
+
+// repositories {
+//     mavenCentral()
+// }
+
+// dependencies {
+//     compile 'com.facebook.react:react-native:+'
+// }
+
+buildscript {
+    if (project == rootProject) {
+        repositories {
+            google()
+            mavenCentral()
+            jcenter()
+        }
+
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.5.3'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+rootProject.allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+android {
+    compileSdkVersion safeExtGet('Picker_compileSdkVersion', 29)
+    defaultConfig {
+        minSdkVersion safeExtGet('Picker_minSdkVersion', 16)
+        targetSdkVersion safeExtGet('Picker_targetSdkVersion', 29)
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    lintOptions {
+        disable 'GradleCompatible'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url("$rootDir/../node_modules/react-native/android")
+    }
+    google()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    //noinspection GradleDynamicVersion
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation "cn.aigestudio.wheelpicker:WheelPicker:1.1.3"
+}
