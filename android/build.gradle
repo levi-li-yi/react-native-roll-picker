@@ -61,27 +61,36 @@ rootProject.allprojects {
     }
 }
 
+// android {
+//     compileSdkVersion safeExtGet('Picker_compileSdkVersion', 29)
+//     defaultConfig {
+//         minSdkVersion safeExtGet('Picker_minSdkVersion', 16)
+//         targetSdkVersion safeExtGet('Picker_targetSdkVersion', 29)
+//         versionCode 1
+//         versionName "1.0"
+
+//     }
+
+//     buildTypes {
+//         release {
+//             minifyEnabled false
+//         }
+//     }
+//     lintOptions {
+//         disable 'GradleCompatible'
+//     }
+//     compileOptions {
+//         sourceCompatibility JavaVersion.VERSION_1_8
+//         targetCompatibility JavaVersion.VERSION_1_8
+//     }
+// }
+
 android {
-    compileSdkVersion safeExtGet('Picker_compileSdkVersion', 29)
+    compileSdkVersion safeExtGet('compileSdkVersion', 29)
+
     defaultConfig {
-        minSdkVersion safeExtGet('Picker_minSdkVersion', 16)
-        targetSdkVersion safeExtGet('Picker_targetSdkVersion', 29)
-        versionCode 1
-        versionName "1.0"
-
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
-    lintOptions {
-        disable 'GradleCompatible'
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        minSdkVersion safeExtGet('minSdkVersion', 21)
+        targetSdkVersion safeExtGet('targetSdkVersion', 29)
     }
 }
 
@@ -98,7 +107,6 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:+"  // From node_modules
-
+    implementation "com.facebook.react:react-native:0.69.4"  // From node_modules
     implementation "cn.aigestudio.wheelpicker:WheelPicker:1.1.3"
 }

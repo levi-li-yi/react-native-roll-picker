@@ -87,9 +87,10 @@ public class PickerManager extends SimpleViewManager<Picker> {
 
     @ReactProp(name="selectedIndex")
     public void setSelectedIndex(Picker picker, int index) {
-        if (picker != null && picker.getState() == WheelPicker.SCROLL_STATE_IDLE) {
-            picker.setSelectedItemPosition(index, false);
-            picker.invalidate();
+      if (picker != null && picker.getState() == WheelPicker.SCROLL_STATE_IDLE) {
+          System.out.println("index:" + index);
+          picker.setSelectedItemPosition(index, false);
+          picker.invalidate();
         }
     }
 

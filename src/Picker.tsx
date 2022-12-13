@@ -67,6 +67,8 @@ export const Picker = ({
     viewWidth,
   });
 
+  // console.log('data, columnWidths, selectedIndexes, windowWidth', data, columnWidths, selectedIndexes, windowWidth)
+
   const handleOnChange: NativeOnChange = useCallback(
     ({ nativeEvent }) => {
       if (onChange) {
