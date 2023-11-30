@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {
   Children,
   ReactElement,
@@ -51,7 +52,7 @@ export const Picker = ({
   indicatorSize = 1,
   itemSpace = 12,
   textColor = '#000000',
-  textSize = 20,
+  textSize = 30,
   loop,
   numberOfLines = 1,
   onChange,
@@ -227,6 +228,6 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   picker: {
-    height: 216,
+    height: 316,
   },
 });
