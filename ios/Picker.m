@@ -1,20 +1,20 @@
 //
-//  Picky.m
-//  Picky
+//  Picker.m
+//  Picker
 //
 //  Created by Liam Andrew on 2/6/2022.
 //  Copyright © 2022 Facebook. All rights reserved.
 //
 
-#import "Picky.h"
+#import "Picker.h"
 
 #import <React/RCTConvert.h>
 #import <React/RCTUtils.h>
 
-@interface Picky() <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface Picker() <UIPickerViewDataSource, UIPickerViewDelegate>
 @end
 
-@implementation Picky
+@implementation Picker
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -171,7 +171,7 @@ rowHeightForComponent:(__unused NSInteger) component {
     CGFloat rowHeight = [pickerView rowSizeForComponent:component].height;
     CGFloat rowWidth = [pickerView rowSizeForComponent:component].width;
     view = [[UIView alloc] initWithFrame:CGRectZero];
-    PickyLabel* label = [[PickyLabel alloc] initWithFrame:(CGRect) {
+    PickerLabel* label = [[PickerLabel alloc] initWithFrame:(CGRect) {
       CGPointZero,
       {
         rowWidth,
@@ -181,7 +181,7 @@ rowHeightForComponent:(__unused NSInteger) component {
     [view insertSubview:label atIndex:0];
   }
   
-  PickyLabel* label = view.subviews[0];
+  PickerLabel* label = view.subviews[0];
   label.font = _font;
   
   NSDictionary *rowData = [self dataForRow:row inComponent:component];

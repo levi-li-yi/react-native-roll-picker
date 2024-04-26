@@ -1,14 +1,14 @@
 //
-//  PickyLabel.m
-//  Picky
+//  PickerLabel.m
+//  Picker
 //
 //  Created by Liam Andrew on 2/6/2022.
 //  Copyright © 2022 Facebook. All rights reserved.
 //
 
-#import "PickyLabel.h"
+#import "PickerLabel.h"
 
-@implementation PickyLabel
+@implementation PickerLabel
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

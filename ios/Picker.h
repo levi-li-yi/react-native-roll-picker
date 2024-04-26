@@ -1,6 +1,6 @@
 //
-//  Picky.h
-//  Picky
+//  Picker.h
+//  Picker
 //
 //  Created by Liam Andrew on 2/6/2022.
 //  Copyright © 2022 Facebook. All rights reserved.
@@ -10,9 +10,9 @@
 
 #import <React/UIView+React.h>
 
-#import "PickyLabel.h"
+#import "PickerLabel.h"
 
-@interface Picky : UIPickerView
+@interface Picker : UIPickerView
 
 @property (nonatomic, copy) NSArray *data;
 @property (nonatomic, copy) NSArray *columnWidths;
