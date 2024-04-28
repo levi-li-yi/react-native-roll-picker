@@ -5523,6 +5523,11 @@ react-native-picky@^0.4.0:
   resolved "https://registry.yarnpkg.com/react-native-picky/-/react-native-picky-0.4.0.tgz#6e583355e035d6ef08a05b22aa2b704b0029468e"
   integrity sha512-K4fqNsBMQ5VsR1v0Z3qxdRd3CMQme9p6fvHbL9DdzotL1lj2GBTMDRtwWTZY0GAwiQa8N2XcA1JKPu8jyNTWbA==
 
+react-native-roller-picker@^1.0.25:
+  version "1.0.25"
+  resolved "https://registry.npmjs.org/react-native-roller-picker/-/react-native-roller-picker-1.0.25.tgz#228fc904e521d874e4b274e1f1f7dbd5eea94ec6"
+  integrity sha512-SP4RkyCM2Ag5GgppJPHexWXHc5DhchTCniZDXYGoUQaONYuvTEu55WeBscsqCQsf92CW1Ky0omMGRrfm3TTQhw==
+
 react-native@0.69.4:
   version "0.69.4"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.4.tgz#d66f2a117442a9398b065876afdc568b209dc4da"
