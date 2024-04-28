@@ -1,6 +1,6 @@
 {
   "name": "react-native-roller-picker",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "react-native picker component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
