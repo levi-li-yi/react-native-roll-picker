@@ -1,7 +1,7 @@
 {
   "name": "react-native-roller-picker",
-  "version": "1.0.15",
-  "description": "",
+  "version": "1.0.25",
+  "description": "react-native picker component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/Liamandrew/react-native-picky/issues"
   },
-  "homepage": "https://github.com/Liamandrew/react-native-picky#readme",
+  "homepage": "https://github.com/levi-li-yi/react-native-roll-picker#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -1,4 +1,9 @@
-import { requireNativeComponent, StyleProp, ViewStyle } from 'react-native';
+import {
+  requireNativeComponent,
+  StyleProp,
+  ViewStyle,
+  // Platform,
+} from 'react-native';
 import type {
   NativeColorType,
   NativeOnChange,
@@ -6,6 +11,9 @@ import type {
 } from './types';
 
 const ComponentName = 'Picker';
+
+// const AndroidComponentName = 'Picker';
+// const IOSComponentName = 'PickerManager';
 
 type NativeIOSData = NativePickerDataItem[];
 type NativeAndroidData = NativePickerDataItem;
@@ -42,3 +50,6 @@ export type NativePickerProps = NativeCommonProps &
 
 export const NativePicker =
   requireNativeComponent<NativePickerProps>(ComponentName);
+// requireNativeComponent<NativePickerProps>(
+//   Platform.OS === 'ios' ? IOSComponentName : AndroidComponentName
+// );
