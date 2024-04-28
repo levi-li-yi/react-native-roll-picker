@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-picky.podspec",
+    "react-native-roller-picker.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -38,11 +38,11 @@
     "picker",
     "wheel"
   ],
-  "repository": "https://github.com/Liamandrew/react-native-picky",
-  "author": "Liam Andrew <liam.e.andrew@gmail.com> (https://github.com/Liamandrew)",
+  "repository": "https://github.com/levi-li-yi/react-native-roll-picker",
+  "author": "levi-li-yi <1291445683@qq.com> (https://github.com/levi-li-yi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Liamandrew/react-native-picky/issues"
+    "url": "https://github.com/levi-li-yi/react-native-roll-picker/issues"
   },
   "homepage": "https://github.com/levi-li-yi/react-native-roll-picker#readme",
   "publishConfig": {
