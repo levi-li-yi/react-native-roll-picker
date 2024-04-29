@@ -10,8 +10,7 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  # s.platforms    = { :ios => "10.0" }
-  s.platform     = :ios, "13.0"
+  s.platforms    = { :ios => "10.0" }
   s.source       = { :git => "https://github.com/levi-li-yi/react-native-roll-picker.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
